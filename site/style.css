@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Goofyahh';
+    src: url('goofyahhfont-Regular2') format('opentype');
+}
+
+body {
+    font-family: 'Goofyahh', Arial, sans-serif;
+}
