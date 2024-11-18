@@ -1,8 +1,10 @@
 @font-face {
     font-family: 'Goofyahh';
-    src: url('goofyahhfont-Regular2') format('opentype');
+    src: url(goofyahhfont.otf) format(OpenType);
 }
 
 body {
+    background-image: url(kowhad.jpg);
     font-family: 'Goofyahh', Arial, sans-serif;
+    color: white;
 }
