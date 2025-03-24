@@ -59,5 +59,5 @@ this font package, feel free to contact us at info@shyfonts.com.
 Thank you for downloading this font package and enjoy!
 
 ------------------------------------------------------------------------
-©2000 Iconian Fonts (http://iconian.shyfonts.com) and ShyFonts Type
+ï¿½2000 Iconian Fonts (http://iconian.shyfonts.com) and ShyFonts Type
 Foundry (http://www.shyfonts.com)

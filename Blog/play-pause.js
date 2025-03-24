@@ -10,7 +10,6 @@ let playButton = document.querySelector('.playbutton');
 
         // Zet audio en video op pauze
         audioDing.pause();
-        videoDing.pause();
     });
 
     // Event listener voor de playknop click
@@ -21,5 +20,4 @@ let playButton = document.querySelector('.playbutton');
 
         // Start audio en video
         audioDing.play();
-        videoDing.play();
     });
