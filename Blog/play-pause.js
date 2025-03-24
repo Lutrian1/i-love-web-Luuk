@@ -1,7 +1,9 @@
 let audioDing = document.querySelector('audio');
 let pauseButton = document.querySelector('.pausebutton');
 let playButton = document.querySelector('.playbutton'); 
-    
+
+audioDing.removeAttribute('controls');
+
     // Event listener voor de pauseknop click
     pauseButton.addEventListener('click', function () {
         // Verberg de pauseknop en toon de playknop
