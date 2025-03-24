@@ -1,0 +1,15 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.Text-Core-Functo{
+    font-size: 60px;
+    @supports (background-clip: text){
+        background: -webkit-linear-gradient(1turn, #9a7bf0, #030e22 ,#000000);;
+        background-clip: text;
+        color: transparent;
+    }
+}
+
+/* @supports (background-clip: text), supports vraagt of het kan*/
