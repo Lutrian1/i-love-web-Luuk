@@ -1,4 +1,3 @@
-# Learning Log
 
 # FDND Blog - Luuk Tol
 
