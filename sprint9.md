@@ -1,8 +1,6 @@
 # Sprint 9: The Web is for everyone
 
-Vragenlijst:
-
-# NodeJS & Liquid Skills Assessment
+## Vragenlijst:
 
 1. **Ik kan uitleggen wat NodeJS is en waarvoor het gebruikt wordt** 🍗3 pnt  
    NodeJS is eigenlijk gewoon JavaScript voor server-side. Je gebruikt NodeJS voor belangrijke communicatie tussen jouw site en de server (database) via API calls.
