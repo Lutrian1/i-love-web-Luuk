@@ -38,7 +38,7 @@ Vragenlijst:
    Liquid zorgt ervoor dat je de data die in je `server.js` meegeeft, daadwerkelijk kan gebruiken in je front-end code. [Hier](https://github.com/Lutrian1/the-web-is-for-everyone-interactive-functionality/blob/b44bcd4fd56e78eb0b76539397e0c31af628329e/views/index.liquid#L36-L47) zie je hoe ik met server tags `{{ }}` het gene wat ik in de `server.js` toepas, gebruik.
 
 12. **Ik weet hoe ik data naar Liquid verstuur om dit te gebruiken bij het renderen van een pagina** 🍗3 pnt  
-   [Hiervoor heb ik al een voorbeeld gegeven](#), maar [hier nog een](https://github.com/SuleymanHG/connect-your-tribe-team-squad-page/blob/b94a7b69ee1724f81acf2bb67d80d2db36ffccda/views/statische-main-pages/birthdate.liquid#L9-L19).
+    Hiervoor heb ik al een voorbeeld gegeven, maar [hier nog een](https://github.com/SuleymanHG/connect-your-tribe-team-squad-page/blob/b94a7b69ee1724f81acf2bb67d80d2db36ffccda/views/statische-main-pages/birthdate.liquid#L9-L19).
 
 13. **Ik weet hoe ik Liquid filters toe kan passen en waar ik kan vinden hoe die werken** 🍗3 pnt  
    In [Liquid Filters Documentation](https://shopify.dev/docs/api/liquid/filters) kan je vinden hoe de filters werken. [Hier pas ik bijvoorbeeld `TRUNCATE` toe](https://github.com/Lutrian1/the-web-is-for-everyone-interactive-functionality/blob/b44bcd4fd56e78eb0b76539397e0c31af628329e/views/index.liquid#L39).
@@ -50,19 +50,19 @@ Vragenlijst:
    Ook dit snap ik, [hier een voorbeeld](https://github.com/Lutrian1/the-web-is-for-everyone-interactive-functionality/blob/b44bcd4fd56e78eb0b76539397e0c31af628329e/views/mygiftpage.liquid#L6-L19).
 
 16. **Ik kan in Liquid een controle maken waarmee een image niet getoond wordt als deze niet in de database is ingevuld** 🤓2 pnt  
-   [Hetzelfde voorbeeld als voorheen kan je hiervoor gebruiken](#).
+    Hetzelfde voorbeeld als voorheen kan je hiervoor gebruiken.
 
 17. **Ik heb een strategie voor debuggen in Liquid** 🫣0 pnt  
    Ik debug eigenlijk niet echt mijn Liquid, althans, ik heb hier geen strategie voor. Als het niet werkt, vogel ik maar wat uit totdat het wel doet.
 
 18. **Ik kan data fetchen uit een REST API** 🍗3 pnt  
-   [Voorheen heb ik hier al een aantal voorbeelden opgegeven](#), maar [hier nog één](https://github.com/Lutrian1/the-web-is-for-everyone-interactive-functionality/blob/b44bcd4fd56e78eb0b76539397e0c31af628329e/server.js#L92-L93).
+    Voorheen heb ik hier al een aantal voorbeelden opgegeven, maar [hier nog één](https://github.com/Lutrian1/the-web-is-for-everyone-interactive-functionality/blob/b44bcd4fd56e78eb0b76539397e0c31af628329e/server.js#L92-L93).
 
 19. **Ik snap het verschil tussen HTTP requests van de methodes GET en POST** 🍗3 pnt  
    `POST` voegt iets toe aan een database, `GET` haalt alleen wat op via een API call.
 
 20. **Ik kan data uit een REST API filteren of sorteren** 🍗3 pnt  
-   [Ook hier heb ik al een aantal voorbeelden opgegeven](#), maar [hier nog één](https://github.com/Lutrian1/the-web-is-for-everyone-interactive-functionality/blob/b44bcd4fd56e78eb0b76539397e0c31af628329e/server.js#L75).
+    Ook hier heb ik al een aantal voorbeelden opgegeven, maar [hier nog één](https://github.com/Lutrian1/the-web-is-for-everyone-interactive-functionality/blob/b44bcd4fd56e78eb0b76539397e0c31af628329e/server.js#L75).
 
 21. **Ik snap wat het async keyword doet in JavaScript code** 🫣0 pnt  
    Geen idee. Een wilde gok is dat het ervoor zorgt dat je `try` en `catch` kan gebruiken (of niet) zodat je altijd wat terug krijgt.
@@ -77,4 +77,4 @@ Vragenlijst:
    Ik heb hiermee gewerkt en snap dit, [hier een voorbeeld](https://github.com/Lutrian1/the-web-is-for-everyone-interactive-functionality/blob/b44bcd4fd56e78eb0b76539397e0c31af628329e/server.js#L71-L103).
 
 25. **Ik kan formulier data die is ge-POST door middel van een POST of PATCH HTTP request opslaan in de REST API** 🍗3 pnt  
-   Ook hier kan je [het voorbeeld van 24](#) voor gebruiken.
+   Ook hier kan je het voorbeeld van 24 voor gebruiken.
