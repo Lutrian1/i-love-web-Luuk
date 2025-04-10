@@ -49,6 +49,10 @@ app.get('/learning-journal/:slug', async function(req, res) {
   res.render('artikel.liquid', {fileContents: markedUpContent, metadata: article.data})
 })
 
+app.get('/testjeplayknop', async function(req, res) {
+    res.render('opdrachtjes/testjeplayknop.liquid')
+})
+
 // Stel het poortnummer in waar Express op moet gaan luisteren
 // Lokaal is dit poort 8000, als dit ergens gehost wordt, is het waarschijnlijk poort 80
 app.set('port', process.env.PORT || 8000)
