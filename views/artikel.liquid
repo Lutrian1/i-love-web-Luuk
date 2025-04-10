@@ -1,0 +1,8 @@
+{% render 'partials/head.liquid', title: 'Learning Journal' %}
+
+<h1>{{  metadata.title }}</h1>
+<p class="datum">{{ metadata.date }}</p>
+
+{{ fileContents }}
+
+{% render 'partials/foot.liquid' %}
