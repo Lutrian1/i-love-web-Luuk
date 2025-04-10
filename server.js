@@ -15,7 +15,7 @@ import { marked } from 'marked'
 import matter from 'gray-matter'
 
 // Lees alle bestandsnamen uit de content directory in
-const files = await readdir('content')
+const files = await readdir('docs')
 
 // Maak een nieuwe Express applicatie aan, waarin we de server configureren
 const app = express()
