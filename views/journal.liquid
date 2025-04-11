@@ -1,12 +1,13 @@
 {% render 'partials/head.liquid', title: 'Learning Journal' %}
 
-<h1>Learning Journal</h1>
-<p>Hier mijn Learning Journal.</p>
-
-<section class="articles">
-	{% for file in files %}
-		<a href="/learning-journal/{{ file|slice:0,-3 }}">{{ file|slice:0,-3 }}</a>
-	{% endfor %}
-</section>
+<main>
+	<h1>Learning Journal</h1>
+	<p>Hier mijn Learning Journal.</p>
+	<section class="articles">
+		{% for file in files %}
+			<a href="/learning-journal/{{ file|slice:0,-3 }}">{{ file|slice:0,-3 }}</a>
+		{% endfor %}
+	</section>
+</main>
 
 {% render 'partials/foot.liquid' %}

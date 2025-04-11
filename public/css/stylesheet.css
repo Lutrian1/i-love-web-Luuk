@@ -5,15 +5,19 @@
 
 html, body {
     padding: 0;
+    margin: 0;
+    border: solid var(--border-entire-page);
     font-family: var(--main-font);
-    background-color: var(--main-background-color);
-    
+    background-color: var(--primary-color);
+    background-image: url('/assests/noise.svg');
+    min-height: 100vh;
+
     li {
         list-style: none;
     }
     a {
         text-decoration: none;
-        color: var(--main-text-color);
+        color: black;
     }
 }
 
@@ -22,7 +26,6 @@ html, body {
 
 /*----------------------------------- ALLE VARIABELEN --------------------------------------*/
 body {
-
 
     /* Lettertypen */
     --main-font: 'Action-Man', sans-serif;
@@ -44,22 +47,57 @@ body {
     --bold: 800;
 
     /* Kleuren */
-    --primary-color: #FEFCFA;
-    --main-text-color: #000000;
-    --alt-text-color: #FFFFFF;
-    --main-background-color: #F6F5F5;
-    --results-tab-background-color: #EDEDED;
-    --create-list-card: #868686;
+    --primary-color: #FFFFFF;
 
     /* Knoppen */
-    --button-background-color: #FFFFFF;
-    --second-button-background-color: #212121;
+    --button-background-color: #BB57C4;
+
+    /* border-helepagina */
+    --border-entire-page: 15px;
+
 }
 
 /*----------------------------------- VARIABELEN VOOR ALLE KNOPPEN EN ANDERE ELEMENTEN --------------------------------------*/
+
+main{
+    margin: 5px;
+}
 
 /*----------------------------------- HEADER STYLE, GELDIG VOOR ELKE PAGINA --------------------------------------*/
 
 /*----------------------------------- BUTTONS --------------------------------------*/
 
+.home-button{
+    border: solid 10px;
+    background-color: var(--button-background-color);
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    .home-text{
+        position: relative;
+        top: 10px;
+        padding: 3px;
+        height: 100px;
+    }
+}
+
+/*----------------------------------- COPYRIGHT --------------------------------------*/
+.copyright{
+    border: solid 8px;
+    display: flex;
+    justify-content: center;
+    width: 160px;
+    height: 27px;
+    position: absolute;
+    bottom: 0;
+    right: calc(var(--border-entire-page) - 8px);
+    margin: 0;
+    background-color: var(--primary-color);
+}
+
+.remove-later{
+    position: absolute;
+    right: var(--border-entire-page);
+}
 /* -------------------------------- ANIMATIE ----------------------------------- */
