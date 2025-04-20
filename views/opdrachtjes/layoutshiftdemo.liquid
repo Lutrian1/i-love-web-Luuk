@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/css-for-tests/layoutshift.css">
+    <title>Layout Shift</title>
+</head>
+<body>
+    <header>
+        <button class="redo" aria-label="redo">Test opnieuw</button>
+    </header>
+    <main>
+        <img src="https://picsum.photos/4000">
+        <h1>Voltooi je order</h1>
+        <p> Je hebt <b>{{items | default: 35}}</b> items in je verlanglijstje</p>
+        <button class="Bestel-Button" aria-label="Bestellen">Bestellen</button>
+        <a href="/learning-journal/opdrachtjes" class="Terug-Button" aria-label="Ga terug">Ga terug</a>
+    </main>
+</body>
+<script src="/scripts/layout-shift.js"></script>
+</html>
