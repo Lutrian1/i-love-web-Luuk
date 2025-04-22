@@ -49,12 +49,16 @@ app.get('/learning-journal/:slug', async function(req, res) {
   res.render('artikel.liquid', {fileContents: markedUpContent, metadata: article.data})
 })
 
-app.get('/testjeplayknop', async function(req, res) {
+app.get('/opdrachtjes/testjeplayknop', async function(req, res) {
     res.render('opdrachtjes/testjeplayknop.liquid')
 })
 
-app.get('/layoutshift', async function(req, res) {
+app.get('/opdrachtjes/layoutshift', async function(req, res) {
   res.render('opdrachtjes/layoutshiftdemo.liquid')
+})
+
+app.get('/opdrachtjes/lazyloading', async function(req, res) {
+  res.render('opdrachtjes/lazyloading.liquid')
 })
 
 // Stel het poortnummer in waar Express op moet gaan luisteren

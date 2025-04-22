@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/css-for-tests/lazyloading.css">
+    <title>Layout Shift</title>
+</head>
+<body>
+    <header>
+        <a href="/opdrachtjes/lazyloading" class="redo" aria-label="redo">Test opnieuw</a>
+        <p class="hint"><em>Hint:</em>of refresh de browser</p>
+    </header>
+    <main>
+        <h1>Test</h1>
+        <p><em>Hint:</em>Scroll naar beneden (check de server in de console om te zien dat hij later de images inlaadt)</p>
+        <img src="https://picsum.photos/4000">  
+        {% for i in (1..100) %}<!-- BRON: https://shopify.github.io/liquid/tags/iteration/-->       
+            <span></span>
+            <img src="https://picsum.photos/400/300?random={{ i }}" alt="HIER STAAT EEN IMAGE {{ i }}" loading="lazy">
+            <span></span>
+        {% endfor %}
+    </main>
+</body>
+</html>
