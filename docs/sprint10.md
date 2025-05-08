@@ -20,4 +20,8 @@ Omdat ik afgelopen sprints erg lacking ben geweest met mijn I-Love-Web Bijhouden
 
 ![image](https://github.com/user-attachments/assets/2b3cf894-06a3-42ad-b737-64da243abc94)
 
+## Week 3
 
+### Donderdag 9/05
+
+Vandaag ben ik maar weer is even gaan bijpakken op schoolwerk. Ik was op vakantie (het spijt me docenten voor het plannen van een vakantie mid school, ik maak het goed), en ben dus nu weer aan de volle bak. Ik heb vandaag gewerkt aan een aantal dingen. Dat je kan zien in [dit issue](https://github.com/Lutrian1/user-experience-enhanced-website/issues/7). Ik eigenlijk voornamelijk gewerkt met @view-transition. en nog specifieker view-transition-name:. Ik heb ervoor gezorgd met behulp van keyframes dat het lijkt alsof een kaartje als een soort slideshow naar de volgende pagina slide voor een smoothe overgang.
