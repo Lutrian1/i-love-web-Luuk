@@ -1,3 +1,4 @@
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     align-items: center;
@@ -50,6 +51,9 @@ p{
 .beschrijving{
     view-transition-name: slide-away;
     width: 500px;
+    p{
+        font-family: "Flow Block", system-ui;
+    }
 }
 
 ::view-transition-new(slide-away){
@@ -82,12 +86,12 @@ p{
 
 @keyframes slide-in {
     0% {
-        transform: translateX(-2000px)
+        transform: translateX(2000px)
     }
 }
 
 @keyframes slide-out {
     to {
-        transform: translateY(-2000px)
+        transform: translateX(-2000px)
     }
 }
