@@ -20,5 +20,11 @@ Lazy loading is zodat content pas wordt geladen nadat je hier naartoe gaat.
 
 check me opdracht [hier](/opdrachtjes/lazyloading).
 
+### View Transition
+
+Een vrij lelijke demo maar dit was meer een korte speel test over het omgaan met view transitions. Ik wou er namelijk voor zorgen dat 2 elementen apart iets doen. De ene gaat omhoog de ander omlaag. Door middel van de view-transition-name kon ik spelen hiermee, waardoor ik verschillende animaties had op verschillende elementen.
+
+check me opdracht [hier](/opdrachtjes/viewtrans1).
+
 
 
