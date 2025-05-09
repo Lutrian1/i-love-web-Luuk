@@ -1,0 +1,93 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    background-color: #ffbca8;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    position: sticky;
+    top: 0;
+}
+
+h1{
+    font-size: 42px;
+}
+
+p{
+    font-size: 25px;
+}
+
+.hint{
+    position: absolute;
+    left: 5px;
+    top: 15px;
+}
+
+@view-transition {
+  navigation: auto;
+}
+
+.test{
+    view-transition-name: fade;
+    background-color: black;
+    color: white;
+    width: fit-content;
+    padding: 20px;
+    height: 25px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border: 1rem solid;
+}
+
+.beschrijving{
+    view-transition-name: slide-away;
+    width: 500px;
+}
+
+::view-transition-new(slide-away){
+    animation: .35s cubic-bezier(.08,.85,.85,.54) both slide-in
+}
+
+::view-transition-old(slide-away){
+    animation: .35s cubic-bezier(.08,.85,.85,.54) both slide-out
+}
+
+::view-transition-new(fade) {
+    animation: .3s cubic-bezier(.4,0,.2,1) both fade-away-in
+}
+
+::view-transition-old(fade) {
+    animation: .3s cubic-bezier(.4,0,.2,1) both fade-away-out
+}
+
+@keyframes fade-away-in {
+    0% {
+        transform: translateX(-800px)
+    }
+}
+
+@keyframes fade-away-out {
+    to {
+        transform: translateX(-800px)
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-2000px)
+    }
+}
+
+@keyframes slide-out {
+    to {
+        transform: translateY(-2000px)
+    }
+}

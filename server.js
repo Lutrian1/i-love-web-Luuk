@@ -61,6 +61,15 @@ app.get('/opdrachtjes/lazyloading', async function(req, res) {
   res.render('opdrachtjes/lazyloading.liquid')
 })
 
+app.get('/opdrachtjes/viewtrans1', async function(req, res) {
+  res.render('opdrachtjes/viewtranstest.liquid')
+})
+
+app.get('/opdrachtjes/viewtrans2', async function(req, res) {
+  res.render('opdrachtjes/viewtranstest2.liquid')
+})
+
+
 // Stel het poortnummer in waar Express op moet gaan luisteren
 // Lokaal is dit poort 8000, als dit ergens gehost wordt, is het waarschijnlijk poort 80
 app.set('port', process.env.PORT || 8000)
