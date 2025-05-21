@@ -69,6 +69,11 @@ app.get('/opdrachtjes/viewtrans2', async function(req, res) {
   res.render('opdrachtjes/viewtranstest2.liquid')
 })
 
+app.get('/opdrachtjes/clip-path', async function(req, res) {
+  res.render('opdrachtjes/clip-path.liquid')
+})
+
+
 
 // Stel het poortnummer in waar Express op moet gaan luisteren
 // Lokaal is dit poort 8000, als dit ergens gehost wordt, is het waarschijnlijk poort 80
