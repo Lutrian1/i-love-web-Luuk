@@ -20,6 +20,7 @@ Vandaag gewerkt aan het animeren met clip path(), check mijn opdrachtjes waarin 
 
 Deze code lijkt voorbeeld op Mickey Mouse:
 
+```
 .flower {
   width: 250px;
   aspect-ratio: 1;
@@ -31,6 +32,6 @@ Deze code lijkt voorbeeld op Mickey Mouse:
                    arc to 57.872601148% 25.770625052% of 18.5095954079% large cw, 
                    arc to 75.4762724747% 50% of 18.5095954079% large cw);
 }
-
+```
 
 
