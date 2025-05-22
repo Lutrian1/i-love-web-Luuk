@@ -18,4 +18,19 @@ De rest van de week eigenlijk voornamelijk gewerkt aan onze site. We hebben same
 
 Vandaag gewerkt aan het animeren met clip path(), check mijn opdrachtjes waarin ik hier mee experimenteer. Daarnaast ook gewerkt aan animaties op figma zodat ik met mijn team een fatsoenlijke animatie heb voor de UX.
 
+Deze code lijkt voorbeeld op Mickey Mouse:
+
+.flower {
+  width: 250px;
+  aspect-ratio: 1;
+  background: linear-gradient(60deg, #ED303C, #FF9C5B);
+  clip-path: shape(from 75.4762724747% 50%, 
+                   arc to 57.872601148% 74.229374948% of 18.5095954079% small cw, 
+                   arc to 29.3892626146% 64.974577244% of 18.5095954079% large cw, 
+                   arc to 29.3892626146% 35.025422756% of 18.5095954079% small cw, 
+                   arc to 57.872601148% 25.770625052% of 18.5095954079% large cw, 
+                   arc to 75.4762724747% 50% of 18.5095954079% large cw);
+}
+
+
 
