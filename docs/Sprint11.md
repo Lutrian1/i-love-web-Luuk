@@ -34,4 +34,12 @@ Deze code lijkt voorbeeld op Mickey Mouse:
 }
 ```
 
+## Week 3
+
+### Maandag
+
+![gerwpogherwghewpoj](https://github.com/user-attachments/assets/82354fbf-f999-4430-84e0-6b630c32c097)
+
+
+
 
