@@ -40,6 +40,12 @@ Deze code lijkt voorbeeld op Mickey Mouse:
 
 ![gerwpogherwghewpoj](https://github.com/user-attachments/assets/82354fbf-f999-4430-84e0-6b630c32c097)
 
+### Dinsdag (En vorige week Woensdag tot echt Zaterdag)
+
+Vorige week begon ik het met het maken van een animatie waarbij een bloem als een soort view transition vergroot totdat je bij een nieuwe pagina komt. Ik was hier voornamelijk mee bezig met het statisch bouwen, dat je [hier](https://codepen.io/Lutrian1/pen/jEPNJMe) kan checken. Echter is dit statisch en dus niet nieuw in css. Gelukig is daarvoor de nieuwe 'view-transition' voor. Ik deed dit om niet alleen te spelen hiermee, maar ook om mee te kunnen doen aan de CSS Day congres. Inmiddels is het mij gelukt om deze view transition toe te passen. Echter zijn er nog een aantal kleine dingen dat ik wil aanpassen, maar de view transition (voor nu) werkt prima. 
+
+Check [hier](https://pleasurable-ui-jby7.onrender.com) mijn view transition animatie!
+
 
 
 
