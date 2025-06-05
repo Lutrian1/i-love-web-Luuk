@@ -1,9 +1,30 @@
 # CSS-Day 
 
 ## CSS-Dag 1
-Na het maken van [mijn blog](#Bloem met ::view-transition) over view-transitions. Had ik vandaag dus de kans om op CSS-Day te komen. 6 sprekers kwamen vandaag vertellen over coole nieuwe features in CSS, en in het algemeen, over CSS. 1 van deze speakers was Cyd Stumpel (Ons Docent) waar ik later nog even over ga praten. ANYWAY! Het was een unieke en echt bijzonder leerzame dag voor mij. Zoals ik tegen vele op het event die ik met genoegen heb mogen spreken zij: "Ik kwam eigenlijk voor bewijslast, maar dat is echt compleet opmgedraaid. Tijdens het event kwam ik erachter dat ik echt wel kwam om te leren, en niet voor bewijstlaast. Ik heb zo bizar veel gepraat met mensen en geleerd van de speakers, maar ook van mensen op het event. Niet alleen over dingen binnen CSS, maar ook gewoon hoe je het werkveld instapt, hoe je überhaupt hoi zegt tegen mensen. Ik kan meestal wel een gesprek aanhouden, maar nooit starten. Deze mensen, en voornamelijk Adam Argyle (Wie dat is praat ik later over), waaren zo genuine in alles, dat ze me ook hiermee hielpen. 
 
-## [Bloem met ::view-transition](https://developer.mozilla.org/en-US/docs/Web/CSS/::view-transition) (Blog)
+### Introductie
+
+Na het maken van [mijn blog](#Bloem-met-::view-transition-(Blog)) over view-transitions. Had ik vandaag dus de kans om op CSS-Day te komen. 6 sprekers kwamen vandaag vertellen over coole nieuwe features in CSS, en in het algemeen, over CSS. 1 van deze speakers was Cyd Stumpel (Ons Docent) waar ik later nog even over ga praten. ANYWAY! Het was een unieke en echt bijzonder leerzame dag voor mij. Zoals ik tegen vele op het event die ik met genoegen heb mogen spreken zij: "Ik kwam eigenlijk voor bewijslast, maar dat is echt compleet opmgedraaid. Eenmaal tijdens event boeide mij dit geen kanus,en kwam ik erachter dat ik echt wel kwam om te leren, en niet voor bewijstlast (wel een mooie bonus werdt dit). Ik heb zo bizar veel gepraat met mensen en geleerd van de speakers, maar ook van mensen op het event. Niet alleen over dingen binnen CSS, maar ook gewoon hoe je het werkveld instapt of hoe je überhaupt hoi zegt tegen mensen. Ik kan meestal wel een gesprek aanhouden, maar nooit starten. Deze mensen, en voornamelijk Adam Argyle (Wie dat is praat ik later over), waaren zo genuine in alles, dat ze me ook hiermee hielpen. 
+
+ Ik heb wel duizend links en woorden die ik wil laten zien, dus laten we daar maar is meer starten. Dit is namelijk Adam Argyle, en persoon waarvan ik nog niet eerder had gehoord tot vandaag op CSS-Day (5 juni 2o25).
+
+ ## Adam Argyle
+
+- [Website](https://nerdy.dev)
+- [Codepen](https://codepen.io/collection/JYdmwr)
+- [Collectie Sliders](https://css-day-2025.argyleink.deno.net)
+
+#### "People Grab Thumbs!"
+
+Adam was de eerste spreker van vandaag. Hij was ook (Sorry Cyd) mijn favoriete van de dag. Voornamelijk omdat hij praatte over scrollbars, en hoe hij deze aanpast en styled. Mooiste van allemaal, het is nog accessible ook! Het is zo'n klein niche ding, wat echt TOTAAL niet persee nodig is, maar een website gewoon bijzonder vet maakt. Ik had nog de kans om met hem te praten na het event. Geweldige gozer. Ben ook na dit event hem gaan volgen, en hoop nog meer van hem te leren wat de toekomst brengt. 
+
+Goed, hier zijn een aantal notites van zijn presentatie:
+
+- Overflow: auto = A scroll hint, Thumb size hints at the corpus. It's feedback, Your keyboard and everything works.
+- "Scollbars are our friend"
+- 
+
+## Bloem met ::view-transition (Blog)
 
 ### Introductie
 
