@@ -8,7 +8,7 @@ Na het maken van [mijn blog](#Bloem-met-::view-transition-(Blog)) over view-tran
 
  Ik heb wel duizend links en woorden die ik wil laten zien, dus laten we daar maar is meer starten. Dit is namelijk Adam Argyle, en persoon waarvan ik nog niet eerder had gehoord tot vandaag op CSS-Day (5 juni 2o25).
 
- ## Adam Argyle
+ ## Adam Argyle : Level up your Scroll UX 
 
 - [Website](https://nerdy.dev)
 - [Codepen](https://codepen.io/collection/JYdmwr)
@@ -63,6 +63,11 @@ Zoals ik al zij, ik kan nog wel uren hierover praten, maar het beste is gewoon z
 
 ## 	John Allsopp : A Doa of CSS
 
+## Cyd Stumpel : CSS came for my job!
+
+[Github](https://github.com/Sidstumple/view-transitions)
+
+Cyd was ook echt geweldig om naar te luisteren. Ze zou eigenlijk gewoon mijn number 1 zijn vandaag, maar omdat ze mijn docent is plaats ik haar toch even naar 2, ik hoop dat ze het kan hebben. Ze is mijn number 1 docent voor CSS anyway! Ik weet niet eens waar te beginnen met deze presentatie en alle info dat ze wel niet had. Een voordel dat ik had is dat ik al gedeeltelijk wist waar ze vandaag over ging praten, omdat ik al met ::view-transition heb gewerkt, dankzij haar hulp ook. Het beste is eigenlijk gewoon als je [mijn blog](#Bloem-met-::view-transition-(Blog)) bekijkt, waarin ik probeer uit te leggen over view transitions. Omdat ze eigenlijk zoveel was gaan praten over haar code heb ik ook echt nul qoutes kunnen opschrijven. Het beste is gewoon haar github te bekijken en dan hopen dat mijn geheugen nog genoeg snapt wat ze bedoelde bij bepaalde delen van haar code. 
 
 
 ## Bloem met ::view-transition (Blog)
