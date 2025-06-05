@@ -56,7 +56,8 @@ Nou wil ik echt heel diep hier over in gaan, maar je kan beter gewoon ze codepen
     /* enable if ok with user's preference */
     @media (prefers-reduced-motion: no-preference) {
       scroll-behavior: smooth;
-``` 
+```
+
 ## Bloem met ::view-transition (Blog)
 
 ### Introductie
