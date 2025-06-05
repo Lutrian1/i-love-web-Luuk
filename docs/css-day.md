@@ -57,6 +57,13 @@ Nou wil ik echt heel diep hier over in gaan, maar je kan beter gewoon ze codepen
     @media (prefers-reduced-motion: no-preference) {
       scroll-behavior: smooth;
 ```
+Zoals ik al zij, ik kan nog wel uren hierover praten, maar het beste is gewoon zijn slides, samen met de dingen die hij heeft gemaakt voor die slides. 
+
+![IMG_3489](https://github.com/user-attachments/assets/8e585727-9c5f-4ab9-9842-7a1bd1fdb61c)
+
+## 	John Allsopp : A Doa of CSS
+
+
 
 ## Bloem met ::view-transition (Blog)
 
