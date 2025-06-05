@@ -20,10 +20,43 @@ Adam was de eerste spreker van vandaag. Hij was ook (Sorry Cyd) mijn favoriete v
 
 Goed, hier zijn een aantal notites van zijn presentatie:
 
-- Overflow: auto = A scroll hint, Thumb size hints at the corpus. It's feedback, Your keyboard and everything works.
+- "Overflow: auto = A scroll hint, Thumb size hints at the corpus. It's feedback, Your keyboard and everything works."
 - "Scollbars are our friend"
-- 
 
+Er waren wel 3 presentaties over de scrollbars, maar wij gaan het hebben over de 'wat simpelere'. Deze kan je [hier](https://codepen.io/argyleink/pen/pvJvqjY) vinden. Echter zeg ik wat simpeler, maar echt de helft dat hierin staat snap ik de ballen van. Maar ik ga mijn best doen om voor mijzelf nog even zijn presentatie (voor deze slide), samen te vatten.
+
+Als eerste had hij het over dat hij gebruikt maakt van 3 elementen binnen zijn HTML waarvan 2 divs voor de scroller.
+
+HTML: 
+
+```
+<section class="scroll--root">
+  <div class="scroll--viewport">
+    <div class="scroll--content">
+```
+CSS (Simplified):
+```
+/* 
+  HTML Structure, 3 elements
+
+  .scroll--root 
+    > .scroll--viewport 
+      > .scroll--content
+        > YOUR_CONTENT
+*/
+```
+Nou wil ik echt heel diep hier over in gaan, maar je kan beter gewoon ze codepen checken en erachter komen hoe dit allemaal werkt in zijn css. Echter zijn er wel 2 super belangrijke dingen die moeten worden gedaan wat hij elke keer deed in al zijn demo's. Dat is dat je de scroll root eigenlijk alleen laat, en deze 3 lines code in de viewport verwerkt, alles daaronder is puur styling:
+```
+    /* be explicit about the axis */
+    overflow: hidden auto;
+    
+    /* nearly always specify overscroll behavior */
+    overscroll-behavior-y: contain;
+    
+    /* enable if ok with user's preference */
+    @media (prefers-reduced-motion: no-preference) {
+      scroll-behavior: smooth;
+``` 
 ## Bloem met ::view-transition (Blog)
 
 ### Introductie
