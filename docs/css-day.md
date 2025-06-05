@@ -1,7 +1,11 @@
+# CSS-Day 
 
-# [Bloem met ::view-transition](https://developer.mozilla.org/en-US/docs/Web/CSS/::view-transition)
+## CSS-Dag 1
+Na het maken van [mijn blog](#Bloem met ::view-transition) over view-transitions. Had ik vandaag dus de kans om op CSS-Day te komen. 6 sprekers kwamen vandaag vertellen over coole nieuwe features in CSS, en in het algemeen, over CSS. 1 van deze speakers was Cyd Stumpel (Ons Docent) waar ik later nog even over ga praten. ANYWAY! Het was een unieke en echt bijzonder leerzame dag voor mij. Zoals ik tegen vele op het event die ik met genoegen heb mogen spreken zij: "Ik kwam eigenlijk voor bewijslast, maar dat is echt compleet opmgedraaid. Tijdens het event kwam ik erachter dat ik echt wel kwam om te leren, en niet voor bewijstlaast. Ik heb zo bizar veel gepraat met mensen en geleerd van de speakers, maar ook van mensen op het event. Niet alleen over dingen binnen CSS, maar ook gewoon hoe je het werkveld instapt, hoe je überhaupt hoi zegt tegen mensen. Ik kan meestal wel een gesprek aanhouden, maar nooit starten. Deze mensen, en voornamelijk Adam Argyle (Wie dat is praat ik later over), waaren zo genuine in alles, dat ze me ook hiermee hielpen. 
 
-## Introductie
+## [Bloem met ::view-transition](https://developer.mozilla.org/en-US/docs/Web/CSS/::view-transition) (Blog)
+
+### Introductie
 
 Wat nou als je een coole animatie wil hebben tussen twee pagina's, in alleen CSS en HTML? BAM, daar heb je ::view-transition voor. Dit attribuut maakt het mogelijk om niet alleen cross-page, maar ook same-page view transitions te maken tussen elementen op je website. En het beste? Je hebt hier bijna geen JavaScript voor nodig!
 
@@ -15,7 +19,7 @@ Of check het live: https://pleasurable-ui-jby7.onrender.com/
 
 Dit is me allemaal gelukt dankzij [deze video](https://www.youtube.com/watch?v=Bq5GVrXO6jE&t=1668s) van Cyd, waarin ze uitleg geeft over view-transitions. Dus dikke shoutout naar Cyd! Goed, introductie klaar - tijd om uit te leggen hoe ik dit werkend heb gekregen!
 
-## Uitleg
+#### Uitleg
 
 Als eerste was het belangrijk om te werken met ::view-transition-name. Dit is zodat ik tussen specifieke elementen kan transitionen, dus - van iets, naar iets.
 
@@ -100,6 +104,6 @@ En als laatste de animatie:
   }
 } `
 
-### Afsluitertje
+#### Afsluitertje
 
 Er zijn nog een aantal dingen dat ik wil fixen aan dit project. Voornamelijk dat de andere view transitions nu niet meer werken, dit is een javascript ding, en ga ik binnenkort verwerken. Ook wil ik nog werken met clip-path: shape(), waarin de bloem dus meer uitrekt, en niet statisch is. Ook wil ik dat de bloem altijd een willekeurige kant op gaat, dit ga ik ook nog even fixen. 
