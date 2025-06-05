@@ -6,21 +6,13 @@
 html, body {
     padding: 0;
     margin: 0;
-    border: solid var(--border-entire-page);
     font-family: var(--main-font);
     background-color: var(--primary-color);
-    background-image: url('/assests/noise.svg');
-    min-height: 100vh;
 
     li {
         list-style: none;
     }
-    a {
-        text-decoration: none;
-        color: black;
-    }
 }
-
         /* boven | rechts | onder | links */
         /* margin: 0 0 0 0; */
 
@@ -63,6 +55,18 @@ main{
     margin: 5px;
 }
 
+.border-entire-page {
+    border: var(--border-entire-page) solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box; 
+    background-image: url('/assests/noise.svg');
+    z-index: 2;
+}
+
 /*----------------------------------- HEADER STYLE, GELDIG VOOR ELKE PAGINA --------------------------------------*/
 
 /*----------------------------------- BUTTONS --------------------------------------*/
@@ -74,11 +78,17 @@ main{
     display: flex;
     top: 0;
     left: 0;
+    text-decoration: none;
+    color: black;
+    z-index: 3;
     .home-text{
         position: relative;
         top: 10px;
         padding: 3px;
-        height: 100px;
+        height: 70px;
+            @media (min-width: 600px) {
+                height: 108px;
+            }
     }
 }
 
@@ -89,16 +99,12 @@ main{
     justify-content: center;
     width: 160px;
     height: 27px;
-    position: absolute;
-    bottom: 0;
-    right: calc(var(--border-entire-page) - 8px);
+    position: sticky;
+    bottom: calc(var(--border-entire-page) - 8px);
+    left: calc(var(--border-entire-page) - 8px);
     margin: 0;
     background-color: var(--primary-color);
-}
-
-.remove-later{
-    position: absolute;
-    right: var(--border-entire-page);
+    z-index: 3;
 }
 /* -------------------------------- ANIMATIE ----------------------------------- */
 

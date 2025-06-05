@@ -1,0 +1,172 @@
+header{
+    display: grid;
+    grid-template-areas: 
+    "box-1"
+    "box-2"
+}
+
+nav{  
+    display: grid; 
+    grid-template-areas: 
+    "box-3"
+    "box-4"
+    "box-5"
+    "box-6"; 
+         @media (min-width: 600px) {
+                grid-template-areas: 
+                "box-3 box-4"
+                "box-5 box-6"; 
+            }
+    margin-left: calc(var(--border-entire-page) - 6px);
+}
+
+.top-box--1-for-ani{
+    grid-area: box-1; 
+}
+
+.top-box--2-for-ani{
+    grid-area: box-2; 
+}
+
+.nav-box-1{
+    grid-area: box-3; 
+    height: 180px;
+    width: 100%;
+    background-color: #A7FFBE;
+    aspect-ratio: 1;
+    clip-path: polygon(100% 10px,100% calc(100% -  50px),0 100%,0 0);
+    position: relative;
+    overflow: hidden; 
+}
+
+.nav-box-2{
+    grid-area: box-4; 
+    height: 200px;
+    width: 100%;
+    aspect-ratio: 1;  
+    clip-path: polygon(0 50px,0 calc(100% - 40px),100% 100%,100% 0); /* Het punt na de calc is de manier hoe de schuinheid loopt*/
+    background: #D466AF;
+    position: relative;
+    top: -50px; /* Min de schuinte */
+}
+
+.nav-box-3{
+    grid-area: box-5; 
+    height: 230px;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1;  
+    clip-path: polygon(100% 40px,100% calc(100% -  50px),0 100%,0 0); /* Het punt na de calc is de manier hoe de schuinheid loopt*/
+    background: #FF8F8F;
+    position: relative;
+    top: -90px; /* Min de schuinte */
+}
+
+.nav-box-4{
+    grid-area: box-6; 
+    height: 140px;
+    position: relative;
+}
+
+
+.nav-box-1::after { /* Border*/
+    content: '';
+    width: 120%;
+    height: 25px;
+    position: absolute;
+    bottom: 22px;
+    left: -10%;
+    @media (min-width: 0px) {
+        transform: rotate(-13deg);
+    }
+    @media (min-width: 275px) {
+        transform: rotate(-11deg);
+    }
+    @media (min-width: 315px) {
+        transform: rotate(-9deg);
+    }
+    @media (min-width: 375px) {
+        transform: rotate(-8deg);
+    }
+    @media (min-width: 420px) {
+        transform: rotate(-7deg);
+    }
+    @media (min-width: 490px) {
+        transform: rotate(-6deg);
+    }
+    @media (min-width: 530px) {
+        transform: rotate(-5deg);
+    }
+    background-color: black;
+    z-index: 200;
+}
+
+.nav-box-2::after { /* Border*/
+    content: '';
+    width: 120%;
+    height: 20px;
+    position: absolute;
+    bottom: 18px;
+    left: -10%;
+    @media (min-width: 0px) {
+        transform: rotate(9.2deg);
+    }
+    @media (min-width: 225px) {
+        transform: rotate(8.8deg);
+    }
+    @media (min-width: 275px) {
+        transform: rotate(8.3deg);
+    }
+    @media (min-width: 315px) {
+        transform: rotate(7.1deg);
+    }
+    @media (min-width: 375px) {
+        transform: rotate(6.3deg);
+    }
+    @media (min-width: 420px) {
+        transform: rotate(5.2deg);
+    }
+    @media (min-width: 480px) {
+        transform: rotate(4.5deg);
+    }
+    @media (min-width: 520px) {
+        transform: rotate(4deg);
+    }
+    background-color: black;
+    z-index: 200;
+}
+
+.nav-box-3::after { /* Border*/
+    content: '';
+    width: 120%;
+    height: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: -10%;
+    @media (min-width: 0px) {
+        transform: rotate(-12.2deg);
+    }
+    @media (min-width: 225px) {
+        transform: rotate(-11.5deg);
+    }
+    @media (min-width: 275px) {
+        transform: rotate(-10.6deg);
+    }
+    @media (min-width: 315px) {
+        transform: rotate(-9.1deg);
+    }
+    @media (min-width: 375px) {
+        transform: rotate(-8.3deg);
+    }
+    @media (min-width: 420px) {
+        transform: rotate(-7.2deg);
+    }
+    @media (min-width: 480px) {
+        transform: rotate(-6.5deg);
+    }
+    @media (min-width: 520px) {
+        transform: rotate(-5deg);
+    }
+    background-color: black;
+    z-index: 200;
+}
