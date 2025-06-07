@@ -73,6 +73,11 @@ app.get('/opdrachtjes/clip-path', async function(req, res) {
   res.render('opdrachtjes/clip-path.liquid')
 })
 
+app.get('/blog', async function(req, res) {
+  res.render('blog.liquid')
+})
+
+
 
 
 // Stel het poortnummer in waar Express op moet gaan luisteren

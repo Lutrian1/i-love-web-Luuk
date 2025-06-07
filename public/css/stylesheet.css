@@ -22,22 +22,6 @@ body {
     /* Lettertypen */
     --main-font: 'Action-Man', sans-serif;
 
-    /* Lettergroottes voor koppen */
-    --h1: 60px;
-    --h2: 40px;
-    --h3: 24px;
-    --h4: 30px;
-
-    --main-p: 16.6px;
-    --big-text: 20px;
-    --big-important-text: 24px;
-
-    /* Font weight */
-    --regular: 400;
-    --medium: 500;
-    --semi-bold: 600;
-    --bold: 800;
-
     /* Kleuren */
     --primary-color: #FFFFFF;
 
@@ -66,8 +50,6 @@ main{
     background-image: url('/assests/noise.svg');
     z-index: 2;
 }
-
-/*----------------------------------- HEADER STYLE, GELDIG VOOR ELKE PAGINA --------------------------------------*/
 
 /*----------------------------------- BUTTONS --------------------------------------*/
 
