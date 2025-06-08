@@ -1,5 +1,7 @@
+/*----------------------------------- General Shi --------------------------------------*/
 html{
     --line-height: 2rem;
+    --brand-adam: color(display-p3 .5 1 1);
 }
 body {
     margin: 0;
@@ -8,6 +10,13 @@ body {
     li{
         list-style: inside;
     }
+    strong{
+        font-weight: normal;
+    }
+}
+@font-face {
+    font-family: Graffiti;
+    src: url(/fonts/graffiti/Higher-Jump.ttf);
 }
 
 /*----------------------------------- Grid Styling --------------------------------------*/
@@ -59,12 +68,12 @@ header{
 
 .red-line{
     border-right: solid 1px rgb(241, 102, 102);
-    opacity: 70%;
     margin-left: -0.5rem;
     background: linear-gradient(to bottom,transparent 25px,#00b0d7 1px);
     background-size: 200% 26px;
     position: relative;
     z-index: 1;
+
     .red-line-break{
         top: 0;
         left: 0;
@@ -74,9 +83,11 @@ header{
         display: flex;
         justify-content: center;
         align-items: center;
+
         .home-button-blog{
             transform: rotate(8deg);
         }
+
         font-size: 2rem;
     }
 }
@@ -112,35 +123,61 @@ p{
 
 .rainbow-text{
     font-family: "Comic Sans MS", "Comic Sans", cursive;
-    color: transparent;
-    background: linear-gradient(
-        90deg,
-        rgba(255, 0, 0, 1) 0%,
-        rgba(238, 100, 10, 1) 7%,
-        rgba(210, 169, 39, 1) 14%,
-        rgba(234, 252, 62, 1) 21%,
-        rgba(134, 248, 82, 1) 28%,
-        rgba(99, 245, 156, 1) 35%,
-        rgba(87, 241, 215, 1) 42%,
-        rgba(75, 216, 237, 1) 49%,
-        rgba(66, 158, 239, 1) 56%,
-        rgba(57, 74, 241, 1) 63%,
-        rgba(126, 45, 244, 1) 70%,
-        rgba(162, 84, 247, 1) 77%,
-        rgba(229, 117, 249, 1) 84%,
-        rgba(251, 103, 164, 1) 91%,
-        rgba(253, 127, 190, 1) 97%,
-        rgba(255, 0, 191, 1) 100%
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
     transform: rotate(-7deg);
-    width: fit-content;
     margin: 0rem 2rem 2rem 2rem;
     @media (min-width: 700px) {
         transform: rotate(-3deg);
     }
 }
+    @supports (background-clip: text) or (-webkit-background-clip: text) {
+        .rainbow-text{
+            color: transparent;
+            background: linear-gradient(
+                90deg,
+                rgba(255, 0, 0, 1) 0%,
+                rgba(238, 100, 10, 1) 7%,
+                rgba(210, 169, 39, 1) 14%,
+                rgba(234, 252, 62, 1) 21%,
+                rgba(134, 248, 82, 1) 28%,
+                rgba(99, 245, 156, 1) 35%,
+                rgba(87, 241, 215, 1) 42%,
+                rgba(75, 216, 237, 1) 49%,
+                rgba(66, 158, 239, 1) 56%,
+                rgba(57, 74, 241, 1) 63%,
+                rgba(126, 45, 244, 1) 70%,
+                rgba(162, 84, 247, 1) 77%,
+                rgba(229, 117, 249, 1) 84%,
+                rgba(251, 103, 164, 1) 91%,
+                rgba(253, 127, 190, 1) 97%,
+                rgba(255, 0, 191, 1) 100%
+            );
+            background-clip: text;
+            -webkit-background-clip: text;
+            width: fit-content;
+        }
+    }
+
+/*----------------------------------- Graffiti Thing for Adam --------------------------------------*/
+
+.graffiti-header{
+    font-family: 'Graffiti', 'Franklin Gothic Medium', Arial, sans-serif;
+    margin: 1.5em 0em 1.5em 0;
+    line-height: 4rem;
+    text-shadow: none;
+}
+    @supports (background-clip: text) or (-webkit-background-clip: text) {
+        .graffiti-header{
+            background: linear-gradient(to right in oklch,color(display-p3 1 0 .5) 0%,var(--brand-adam) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+                @media (prefers-color-scheme: dark) {
+                    background:linear-gradient(to right in oklch,color(display-p3 .5 1 .5) 0%,var(--brand-adam) 100%);
+                    -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;color:transparent
+                }
+        }
+    }
 
 /*----------------------------------- Animation on footer: reveal Luuk--------------------------------------*/
 .footer-reveal{
@@ -209,3 +246,37 @@ p{
     transform: translateY(0px);
   }
 }
+
+/*----------------------------------- Animatie als marker --------------------------------------*/
+/*
+@supports (view-timeline: --markerAni block) {
+    .marker-ani-variation-1{
+        view-timeline: --markerAni block;
+        animation-timeline: --marker1;
+
+        animation-name: marker;
+        animation-fill-mode: both;
+        animation-duration: 1ms; /* Firefox requires this to apply the animation */
+ /*  }
+
+    .marker-ani-variation-2{
+        
+    }
+
+
+    .marker-ani-variation-3{
+        
+    }
+}
+
+@keyframes marker {
+  from {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}*/
