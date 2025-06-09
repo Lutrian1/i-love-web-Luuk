@@ -61,10 +61,15 @@ header{
 
 .paper{
     background: linear-gradient(to bottom,transparent 25px,#00b0d7 1px);
-    background-size: 100% 26px;
-    overflow: auto; /* Bouw dit nog als clip en werk met scroll animaties.*/
+    background-size: 100% 26px; /* Bouw dit nog als clip en werk met scroll animaties.*/
     height: 100vh;
 }
+
+  @supports (overflow: auto){
+    .paper{
+        overflow: auto;
+    }
+  }
 
 .red-line{
     border-right: solid 1px rgb(241, 102, 102);
