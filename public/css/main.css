@@ -2,7 +2,7 @@ header{
     display: grid;
     grid-template-areas: 
     "box-1"
-    "box-2"
+    "box-2";
 }
 
 nav{  
@@ -22,37 +22,61 @@ nav{
 
 .top-box--1-for-ani{
     grid-area: box-1; 
+    height: 50vh;
 }
 
 .top-box--2-for-ani{
     grid-area: box-2; 
+    height: 50vh;
+}
+
+.nav-box-1, .nav-box-2, .nav-box-3, .nav-box-4{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a{
+        font-size: 2rem;
+        text-decoration: none;
+        color: white;
+    }
+
+        @supports (-webkit-text-stroke-color: black) or (-webkit-background-clip: text) {
+            a{  
+                color: transparent;
+                -webkit-text-stroke-color: black;
+                -webkit-text-stroke-width: 1px;
+                    @media (prefers-color-scheme: dark) {
+                        -webkit-text-stroke-color: white;
+                    }
+            }
+    }
 }
 
 .nav-box-1{
     grid-area: box-3; 
-    width: 100%;
     background-color: #A7FFBE;
-    position: relative;
+    height: 30vh;
 }
 
 .nav-box-2{
     grid-area: box-4; 
-    width: 100%;
     background: #D466AF;
-    position: relative;
+    height: 40vh;
 }
 
 .nav-box-3{
     grid-area: box-5; 
-    position: relative;
-    width: 100%;
     background: #FF8F8F;
+    height: 60vh;
 }
 
 .nav-box-4{
     grid-area: box-6; 
-    position: relative;
     background: #a2d8f1;
+    height: 35vh;
 }
 
 
@@ -79,9 +103,11 @@ nav{
     justify-content: center;
     width: 160px;
     height: 27px;
-    position: sticky;
+    position: fixed;
     margin: 0;
     background-color: var(--primary-color);
     z-index: 3;
+    bottom: 0;
+    right: 0;
 }
 
