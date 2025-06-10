@@ -21,6 +21,16 @@ body {
     src: url(/fonts/graffiti/Higher-Jump.ttf);
 }
 
+@media (prefers-color-scheme: dark){
+    html > *{
+        background-color: #252525;
+        color: white;
+        a{
+            color: #ff9dff;
+        }
+    }
+}
+
 /*----------------------------------- Grid Styling --------------------------------------*/
 
 main{
@@ -60,6 +70,9 @@ header{
     align-items: center;
     justify-content: center;
     width: calc(100% + var(--size-scroller));
+    @media (prefers-color-scheme: dark){
+        background-color: #252525;
+    }
 }
 
 .paper{
@@ -93,6 +106,9 @@ header{
                 background: white;
                 background-clip: padding-box;
                 margin: calc(var(--size-5) - 3px);
+                @media (prefers-color-scheme: dark){
+                    background: #252525;
+                }
             }
 
             &::-webkit-scrollbar-thumb {
@@ -194,6 +210,10 @@ header{
         }
 
         font-size: 2rem;
+
+        @media (prefers-color-scheme: dark){
+            background-color: #252525;
+        }
     }
 }
 
