@@ -247,7 +247,7 @@ p{
 /*----------------------------------- Rainbow thing for Cyd --------------------------------------*/
 
 .rainbow-text{
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: "Comic Sans MS", "Comic Sans", "Graffiti", cursive;
     transform: rotate(-7deg);
     margin: 0rem 2rem 2rem 2rem;
     @media (min-width: 700px) {
@@ -413,3 +413,20 @@ p{
     transform: scaleX(1);
   }
 }*/
+
+/*----------------------------------- Codeblock styling --------------------------------------*/
+
+code{
+    background-color: #252525;
+    color: white;
+    display: block;
+    margin: 1em;
+    @media (prefers-color-scheme: dark){
+        background-color: #dfdfdf;
+        color: black;
+    }
+}
+
+.conclusion{
+    margin-bottom: 2rem;
+}

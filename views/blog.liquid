@@ -75,9 +75,9 @@
                 <strong class="marker-ani-variation-3">Als eerste had hij het over dat hij gebruikt maakt van 3 elementen binnen zijn HTML waarvan 2 divs voor de scroller.</strong></p>
                 <code>
                     HTML:
-                    <section class="scroll--root">
-                        <div class="scroll--viewport">
-                            <div class="scroll--content">
+                    section class="scroll--root"
+                        div class="scroll--viewport"
+                            div class="scroll--content"
                 </code>
                 <code>
                     CSS (Simplified):
@@ -147,28 +147,21 @@
                 <p>Als eerste was het belangrijk om te werken met <strong class="marker-ani-variation-1">::view-transition-name.</strong> Dit is zodat ik tussen specifieke elementen kan transitionen, 
                 dus - van iets, naar iets.</p>
                 <ul>
-                    <li><b>Homepage</b></li>
-                    <li>
+                    <p><b>Homepage</b></p>
                         <code>
-                            <article class="gift-box" style="view-transition-name: card-{{ gift.id }};"></article>
+                            article class="gift-box" style="view-transition-name: card-{{ gift.id }};"
                         </code>
-                        <p>Ik geef hier een view transtition mee voor een andere element, dit is niet belangrijk voor de view transition 'bloem', 
-                        maar is wel nodig omdat het wordt gebruikt in de view transition.</p>
-                    </li>
-                    <li>
+                        <li>Ik geef hier een view transtition mee voor een andere element, dit is niet belangrijk voor de view transition 'bloem', 
+                        maar is wel nodig omdat het wordt gebruikt in de view transition.</li>
                         <code>
-                            <div class="flower" height="138" width="129" style="view-transition-name: flower;"></div>
+                            div class="flower" height="138" width="129" style="view-transition-name: flower;"
                         </code>
-                        <p><strong class="marker-ani-variation-3">Dit is het belangrijkste!</strong> Dit is de bloem waarop de view transition gaat gebeuren</p>
-                    </li>
-                    <li><b>Profile:</b></li>
-                    <li>
+                        <li><strong class="marker-ani-variation-3">Dit is het belangrijkste!</strong> Dit is de bloem waarop de view transition gaat gebeuren</li>
+                    <p><b>Profile:</b></p>
                         <code>
-                            <div class="flower-new"></div>
+                            div class="flower-new"
                         </code>
-                        <p>De div waaran ik in css een view transition meegeef. Dit kan ook in HTML zoals hierboven, ik wou echter beide uitproberen.</p>
-                    </li>
-                    <li>
+                        <li>De div waaran ik in css een view transition meegeef. Dit kan ook in HTML zoals hierboven, ik wou echter beide uitproberen.</li>
                         <code>
                             .flower-new{
                                 view-transition-name: flower;
@@ -182,38 +175,35 @@
                                 z-index: 1000;
                             }
                         </code>
-                        <p>Stukje code in profile waar de bloem naar toe transitioned, 
+                        <li>Stukje code in profile waar de bloem naar toe transitioned, 
                         dit is erg belangrijk omdat de 'oude' bloem vergroot in de 'nieuwe' die zich bevind op de profile, en andersom. 
                         In javascript verwijder ik deze class, nadat de animatie is gedaan. Dit is niet nodig, 
-                        maar wel handig zodat je DOM niet op de profile word aangepast.</p>
-                    </li>
+                        maar wel handig zodat je DOM niet op de profile word aangepast.</li>
                 </ul>
                 <p>Key, nu dat allemaal is gedaan, gaan we aan het vette beginnen. Als je wil kan je mijn volledige code <a href="https://github.com/Sebastiaan-hva/pleasurable-ui/blob/a41553006a0ff40578d7979bdfad1e7d2c2638d7/public/css/stylesheet.css#L343-L395">hier zien:</a></p>
                 <h5>Om elke line nog even langs te gaan:</h5>
                 <ol>
-                    <li>
+                    <li>Hierin pas ik alles aan, naast de flower animatie. De volledige DOM (naast bepaalde elementen die ik hieronder style) word weggehaald in 0.1s
                         <code>
-                            ::view-transition-new(root),
-                            ::view-transition-old(root) {
+                            view-transition-new(root),
+                            view-transition-old(root) 
                                 animation-duration: 0.1s;
                                 animation-fill-mode: both;
                                 animation-timing-function: ease-in;
-                            }
+                         
                         </code>
-                        <p>Hierin pas ik alles aan, naast de flower animatie. De volledige DOM (naast bepaalde elementen die ik hieronder style) word weggehaald in 0.1s</p>
                     </li>
-                    <li>
+                    <li>Ik geef hier de flower group een index mee zodat deze boven alle elementen valt. Dit is zodat de animatie het hele scherm overneemt.
                         <code>
                             ::view-transition-group(flower){
                                 z-index: 1000;
                             }
                         </code>
-                        <p>Ik geef hier de flower group een index mee zodat deze boven alle elementen valt. Dit is zodat de animatie het hele scherm overneemt.</p>
                     </li>
-                    <li>
+                    <li>Hierin geef ik de duur van de animatie aan mee, en de animatie zelf, met behulp van keyframes.
                         <code>
-                            ::view-transition-new(flower),
-                            ::view-transition-old(flower){
+                            view-transition-new(flower),
+                            view-transition-old(flower)
                                 animation-duration: 0.8s;
                                 animation-fill-mode: both;
                                 animation-name: flower-rotate;
@@ -221,21 +211,18 @@
                                 overflow: clip;
                                 object-fit: cover;
                                 cursor: none;
-                            }
+                            
                         </code>
-                        <p>Hierin geef ik de duur van de animatie aan mee, en de animatie zelf, met behulp van keyframes.</p>
                     </li>
-                    <li>
+                    <li>Dit is de duur van alle animaties binnen de volledige DOM, en alle groups. Dit is zodat de kaartjes eigenlijk weg-faden, terwijl de bloem zolang duurt.
                         <code>
                             html::view-transition-group(*) {
                                 animation-duration: 0.8s;
                                 animation-fill-mode: both;
                             }
                         </code>
-                        <p>Dit is de duur van alle animaties binnen de volledige DOM, en alle groups. Dit is zodat de kaartjes eigenlijk weg-faden, terwijl de bloem zolang duurt.</p>
                     </li>
-                    <li>
-                        <p>En als laatste de animatie:</p>
+                    <li>En als laatste de animatie:
                         <code>
                             @keyframes flower-rotate{
                             from{
@@ -248,11 +235,10 @@
                             }
                             }
                         </code>
-                        <p>Dit is de duur van alle animaties binnen de volledige DOM, en alle groups. Dit is zodat de kaartjes eigenlijk weg-faden, terwijl de bloem zolang duurt.</p>
                     </li>
                 </ol>
                 <h4>Afsluitertje</h4>
-                <p>Er zijn nog een aantal dingen dat ik wil fixen aan dit project. Voornamelijk dat de andere view transitions nu niet meer werken, 
+                <p class="conclusion">Er zijn nog een aantal dingen dat ik wil fixen aan dit project. Voornamelijk dat de andere view transitions nu niet meer werken, 
                 dit is een javascript ding, en ga ik binnenkort verwerken. Ook wil ik nog werken met clip-path: shape(), waarin de bloem dus meer uitrekt, 
                 en niet statisch is. Ook wil ik dat de bloem altijd een willekeurige kant op gaat, dit ga ik ook nog even fixen.</p>
             </section>
