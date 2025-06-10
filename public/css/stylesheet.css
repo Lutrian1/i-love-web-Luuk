@@ -39,18 +39,6 @@ main{
     margin: 5px;
 }
 
-.border-entire-page {
-    border: var(--border-entire-page) solid;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    box-sizing: border-box; 
-    background-image: url('/assests/noise.svg');
-    z-index: 2;
-}
-
 /*----------------------------------- BUTTONS --------------------------------------*/
 
 .home-button{
@@ -74,20 +62,6 @@ main{
     }
 }
 
-/*----------------------------------- COPYRIGHT --------------------------------------*/
-.copyright{
-    border: solid 8px;
-    display: flex;
-    justify-content: center;
-    width: 160px;
-    height: 27px;
-    position: sticky;
-    bottom: calc(var(--border-entire-page) - 8px);
-    left: calc(var(--border-entire-page) - 8px);
-    margin: 0;
-    background-color: var(--primary-color);
-    z-index: 3;
-}
 /* -------------------------------- ANIMATIE ----------------------------------- */
 
 @view-transition{
