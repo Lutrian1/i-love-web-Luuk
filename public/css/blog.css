@@ -2,6 +2,8 @@
 html{
     --line-height: 2rem;
     --brand-adam: color(display-p3 .5 1 1);
+    
+    --size-scroller: 16px;
 }
 body {
     margin: 0;
@@ -57,6 +59,7 @@ header{
     background-color: white;
     align-items: center;
     justify-content: center;
+    width: calc(100% + var(--size-scroller));
 }
 
 .paper{
@@ -65,11 +68,108 @@ header{
     height: 100vh;
 }
 
-  @supports (overflow: auto){
+@supports (overflow: auto){
+
     .paper{
         overflow: auto;
+        overscroll-behavior-y: contain;
+        overflow-x: hidden;
+
+        @layer scrollbar-thumb-styling{
+            @media (prefers-reduced-motion: no-preference){
+                scroll-behavior: smooth;
+            }
+
+                &:is(:focus-visible, :focus-within){
+                    outline: none;
+                    outline-offset: -2px;
+                }
+
+            &::-webkit-scrollbar{
+                height: var(--size-scroller);
+            }
+
+            &::-webkit-scrollbar-track{
+                background: white;
+                background-clip: padding-box;
+                margin: calc(var(--size-5) - 3px);
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: color-mix(in srgb, light-dark(rgb(238, 52, 255), #ffffff), transparent 50%);
+                border-radius: 1e3px;
+                border: 3px solid white;
+            }
+            
+            &:is(:focus-visible, :focus-within)::-webkit-scrollbar-thumb {
+                background: var(#965ef0);
+            }
+            
+            @media (hover) {
+            
+            &::-webkit-scrollbar-thumb:hover {
+                background: light-dark(rgb(238, 52, 255), #ffffff);
+            }
+            
+            &::-webkit-scrollbar {
+                opacity: .5;
+            }
+
+            &::-webkit-scrollbar:hover {
+                opacity: 1;
+            }
+
+            }
+            /* Firefox */
+            @supports (-moz-appearance:none) {
+
+                scrollbar-width: thin;
+                scrollbar-color: light-dark(rgb(238, 52, 255), #ffffff) transparent;
+                transition: scrollbar-color 0.3s ease;
+
+                &:is(:focus-visible, :focus-within) {
+                    scrollbar-color: var(--link) transparent;
+                }
+
+                @media (hover) {
+                    scrollbar-color: 
+                    color-mix(in srgb, light-dark(rgb(238, 52, 255), #ffffff), transparent 50%) 
+                    transparent;
+
+                    &:hover {
+                    scrollbar-color: light-dark(rgb(238, 52, 255), #ffffff) transparent;
+                    }
+                }
+            }
+        }
     }
-  }
+
+}
+
+@layer scroll-animation{
+    @keyframes scroll-effect {
+        entry 0%  {
+            opacity: 0;
+        }
+        entry 50%,
+        exit 50% {
+            opacity: 1;
+        }
+        exit 100% {
+            opacity: 0;
+        }
+    }
+            
+    section > * {
+        @media (prefers-reduced-motion: no-preference) {
+                        
+            @supports (animation-timeline: view(y)) {
+                animation: scroll-effect linear both;
+                animation-timeline: view(y);
+            }
+        }
+    }
+}
 
 .red-line{
     border-right: solid 1px rgb(241, 102, 102);
