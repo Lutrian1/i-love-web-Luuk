@@ -3,6 +3,10 @@ header{
     grid-template-areas: 
     "box-1"
     "box-2";
+        @media (min-width: 970px) {
+            grid-template-areas: 
+            "box-1 box-2"
+        }
 }
 
 nav{  
@@ -12,24 +16,74 @@ nav{
     "box-4"
     "box-5"
     "box-6"; 
-         @media (min-width: 600px) {
-                grid-template-areas: 
-                "box-3 box-4"
-                "box-5 box-6"; 
-            }
+        @media (min-width: 600px) {
+            grid-template-areas: 
+            "box-3 box-4"
+            "box-5 box-6"; 
+        }
     margin-left: calc(var(--border-entire-page) - 6px);
+    article{
+       border: solid black;
+       border-width: 10px 0;
+    }
 }
 
 .top-box--1-for-ani{
     grid-area: box-1; 
-    height: 50vh;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #FFF185;
+    border: solid black;
+    border-width: 10px 0;
+    margin: 0;
+    width: 100%;
+    img{
+        z-index: 8;
+        margin-bottom: calc(-10px);
+        @media (min-width: 350px) {
+            height: 270px;
+            width: 270px;
+        }
+        @media (min-width: 970px) {
+            height: 350px;
+            width: 350px;
+        }
+    }
+    @media (min-width: 600px) {
+        border-width: 10px 0px 10px 0px;
+    }
 }
 
 .top-box--2-for-ani{
     grid-area: box-2; 
-    height: 50vh;
+    border: solid;
+    border-width: 10px 0;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #A4FFF4;
+    width: 100%;
+    img{
+        z-index: 8;
+        margin-bottom: calc(-65px - 10px);
+        @media (min-width: 350px) {
+            height: 350px;
+            width: 350px;
+        }
+        @media (min-width: 970px) {
+            height: 450px;
+            width: 450px;
+            margin-bottom: calc(-75px - 10px);
+        }
+    }
+    @media (min-width: 600px) {
+        border-width: 10px 0px 10px 20px;
+        margin-left: -20px;
+    }
 }
-
 .nav-box-1, .nav-box-2, .nav-box-3, .nav-box-4{
     width: 100%;
     position: relative;
@@ -38,9 +92,10 @@ nav{
     align-items: center;
 
     a{
-        font-size: 2rem;
+        font-size: clamp(2rem, 6vw, 3rem);
         text-decoration: none;
-        color: white;
+        color: black;
+        z-index: 9;
     }
 
         @supports (-webkit-text-stroke-color: black) or (-webkit-background-clip: text) {
@@ -48,9 +103,6 @@ nav{
                 color: transparent;
                 -webkit-text-stroke-color: black;
                 -webkit-text-stroke-width: 1px;
-                    @media (prefers-color-scheme: dark) {
-                        -webkit-text-stroke-color: white;
-                    }
             }
     }
 }
@@ -58,25 +110,43 @@ nav{
 .nav-box-1{
     grid-area: box-3; 
     background-color: #A7FFBE;
-    height: 30vh;
+    height: 50vh;
+    @media (min-width: 600px) {
+        border: solid black;
+        border-width: 10px 0px 10px 0px;
+    }
 }
 
 .nav-box-2{
     grid-area: box-4; 
     background: #D466AF;
-    height: 40vh;
+    height: 50vh;
+    @media (min-width: 600px) {
+        border: solid black;
+        border-width: 10px 0px 10px 20px;
+        margin-left: -20px;
+    }
 }
 
 .nav-box-3{
     grid-area: box-5; 
     background: #FF8F8F;
-    height: 60vh;
+    height: 50vh;
+    @media (min-width: 600px) {
+        border: solid black;
+        border-width: 10px 0px 10px 0px;
+    }
 }
 
 .nav-box-4{
     grid-area: box-6; 
     background: #a2d8f1;
-    height: 35vh;
+    height: 50vh;
+    @media (min-width: 600px) {
+        border: solid black;
+        border-width: 10px 0px 10px 20px;
+        margin-left: -20px;
+    }
 }
 
 
@@ -91,7 +161,7 @@ nav{
     height: 100vh;
     box-sizing: border-box; 
     background-image: url('/assests/noise.svg');
-    z-index: 2;
+    z-index: 7;
     pointer-events: none;
 }
 
@@ -106,8 +176,44 @@ nav{
     position: fixed;
     margin: 0;
     background-color: var(--primary-color);
-    z-index: 3;
+    z-index: 9;
     bottom: 0;
     right: 0;
 }
+
+/*----------------------------------- Supports query --------------------------------------*/
+
+@supports (clip-path: shape(from 0% 0%,hline to 93.74%,line to 100% 100%,line to 0% 89.01%,vline to 0%,close)){
+    .top-box--1-for-ani{
+        border: none;
+        clip-path: shape(from 0% 0%,hline to 93.74%,line to 100% 100%,line to 0% 89.01%,vline to 0%,close);
+        img{
+            margin-bottom: 0;
+        }
+    }
+    .top-box--2-for-ani{
+        border: none;
+        clip-path: shape(from 0% 0%,hline to 100%,vline to 100%,line to 4.28% 87.66%,line to 0% 0%,close);
+    }
+    .nav-box-1, .nav-box-2, .nav-box-3, .nav-box-4{
+        border: none;
+        overflow: hidden;
+    }
+    .nav-box-1{
+        clip-path: shape(from 0% 0%,line to 100% 12.08%,line to 92.9% 90.63%,line to 0% 100%,vline to 0%,close);
+    }
+    .nav-box-2{
+        clip-path: shape(from 12.03% 0%,line to 98.66% 6.57%,line to 100% 92.05%,line to 0% 100%,line to 12.03% 0%,close);;
+    }
+    .nav-box-3{
+        clip-path: shape(from 0% 8.68%,line to 89.56% 0%,line to 100% 100%,hline to 0%,vline to 8.68%,close);
+    }
+    .nav-box-4{
+        clip-path: shape(from 0% 14.98%,line to 100% 0%,vline to 100%,hline to 5.51%,line to 0% 14.98%,close);;
+    }
+    body{
+        background-color: black;
+    }
+}
+
 
