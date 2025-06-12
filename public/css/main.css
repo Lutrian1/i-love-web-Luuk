@@ -1,3 +1,7 @@
+body{
+    background-color: black;
+}
+
 header{
     display: grid;
     grid-template-areas: 
@@ -22,10 +26,6 @@ nav{
             "box-5 box-6"; 
         }
     margin-left: calc(var(--border-entire-page) - 6px);
-    article{
-       border: solid black;
-       border-width: 10px 0;
-    }
 }
 
 .top-box--1-for-ani{
@@ -34,11 +34,11 @@ nav{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    background-color: #FFF185;
-    border: solid black;
-    border-width: 10px 0;
     margin: 0;
     width: 100%;
+    background-image: url("/assests/pics/bg-yellow-variant.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
     img{
         z-index: 8;
         margin-bottom: calc(-10px);
@@ -51,21 +51,18 @@ nav{
             width: 350px;
         }
     }
-    @media (min-width: 600px) {
-        border-width: 10px 0px 10px 0px;
-    }
 }
 
 .top-box--2-for-ani{
     grid-area: box-2; 
-    border: solid;
-    border-width: 10px 0;
     height: 45vh;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    background-color: #A4FFF4;
     width: 100%;
+    background-image: url("/assests/pics/bg-blue-variant.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
     img{
         z-index: 8;
         margin-bottom: calc(-65px - 10px);
@@ -78,10 +75,6 @@ nav{
             width: 450px;
             margin-bottom: calc(-75px - 10px);
         }
-    }
-    @media (min-width: 600px) {
-        border-width: 10px 0px 10px 20px;
-        margin-left: -20px;
     }
 }
 .nav-box-1, .nav-box-2, .nav-box-3, .nav-box-4{
@@ -109,44 +102,34 @@ nav{
 
 .nav-box-1{
     grid-area: box-3; 
-    background-color: #A7FFBE;
     height: 50vh;
-    @media (min-width: 600px) {
-        border: solid black;
-        border-width: 10px 0px 10px 0px;
-    }
+    background-image: url("/assests/pics/bg-green-variant.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .nav-box-2{
     grid-area: box-4; 
-    background: #D466AF;
     height: 50vh;
-    @media (min-width: 600px) {
-        border: solid black;
-        border-width: 10px 0px 10px 20px;
-        margin-left: -20px;
-    }
+    background-image: url("/assests/pics/bg-pink-variant.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .nav-box-3{
     grid-area: box-5; 
-    background: #FF8F8F;
     height: 50vh;
-    @media (min-width: 600px) {
-        border: solid black;
-        border-width: 10px 0px 10px 0px;
-    }
+    background-image: url("/assests/pics/bg-red-variant.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .nav-box-4{
     grid-area: box-6; 
-    background: #a2d8f1;
     height: 50vh;
-    @media (min-width: 600px) {
-        border: solid black;
-        border-width: 10px 0px 10px 20px;
-        margin-left: -20px;
-    }
+    background-image: url("/assests/pics/bg-purple-variant.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
@@ -198,38 +181,39 @@ nav{
 }
 
 /*----------------------------------- SUPPORTS QUERY: THIS DEFINES THE SITE SHAPE --------------------------------------*/
-
+/*
 @supports (clip-path: shape(from 0% 0%,hline to 93.74%,line to 100% 100%,line to 0% 89.01%,vline to 0%,close)){
     .top-box--1-for-ani{
-        border: none;
         clip-path: shape(from 0% 0%,hline to 93.74%,line to 100% 100%,line to 0% 89.01%,vline to 0%,close);
+        background-color: #FFF185;
         img{
             margin-bottom: 0;
         }
     }
     .top-box--2-for-ani{
-        border: none;
         clip-path: shape(from 0% 0%,hline to 100%,vline to 100%,line to 4.28% 87.66%,line to 0% 0%,close);
+        background-color: #A4FFF4;
     }
-    .nav-box-1, .nav-box-2, .nav-box-3, .nav-box-4{
-        border: none;
+    .nav-box-1, .nav-box-2, .nav-box-3, .nav-box-4, .top-box--1-for-ani, .top-box--2-for-ani{
         overflow: hidden;
+        background-image: none;
     }
     .nav-box-1{
         clip-path: shape(from 0% 0%,line to 100% 12.08%,line to 92.9% 90.63%,line to 0% 100%,vline to 0%,close);
+        background-color: #A7FFBE;
     }
     .nav-box-2{
-        clip-path: shape(from 12.03% 0%,line to 98.66% 6.57%,line to 100% 92.05%,line to 0% 100%,line to 12.03% 0%,close);;
+        clip-path: shape(from 12.03% 0%,line to 98.66% 6.57%,line to 100% 92.05%,line to 0% 100%,line to 12.03% 0%,close);
+        background: #D466AF;
     }
     .nav-box-3{
         clip-path: shape(from 0% 8.68%,line to 89.56% 0%,line to 100% 100%,hline to 0%,vline to 8.68%,close);
+        background: #FF8F8F;
     }
     .nav-box-4{
-        clip-path: shape(from 0% 14.98%,line to 100% 0%,vline to 100%,hline to 5.51%,line to 0% 14.98%,close);;
-    }
-    body{
-        background-color: black;
+        clip-path: shape(from 0% 14.98%,line to 100% 0%,vline to 100%,hline to 5.51%,line to 0% 14.98%,close);
+        background: #a2d8f1;
     }
 }
-
+*/
 
