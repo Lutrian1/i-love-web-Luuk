@@ -205,10 +205,6 @@ header{
         justify-content: center;
         align-items: center;
 
-        .home-button-blog{
-            transform: rotate(8deg);
-        }
-
         font-size: 2rem;
 
         @media (prefers-color-scheme: dark){
@@ -430,3 +426,5 @@ code{
 .conclusion{
     margin-bottom: 2rem;
 }
+
+/*----------------------------------- Home button blog--------------------------------------*/

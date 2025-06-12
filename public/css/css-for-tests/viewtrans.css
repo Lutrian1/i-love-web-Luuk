@@ -95,3 +95,45 @@ p{
         transform: translateX(-2000px)
     }
 }
+
+/* -------------------------------- ANIMATIE ----------------------------------- */
+
+@view-transition{
+    auto;
+}
+
+.test{
+    view-transition-name: slide;
+}
+
+.beschrijving{
+    view-transition-name: revslide;
+}
+
+::view-transition-new(revslide){
+    animation: .25s cubic-bezier(.08,.85,.85,.54) ease-out slide-out
+}
+
+::view-transition-old(revslide){
+    animation: .25s cubic-bezier(.08,.85,.85,.54) ease-out slide-in
+}
+
+::view-transition-new(slide) {
+    animation: .25s cubic-bezier(.4,0,.2,1) both slide-in
+}
+
+::view-transition-old(slide) {
+    animation: .25s cubic-bezier(.4,0,.2,1) both slide-out
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateY(-70px)
+    }
+}
+
+@keyframes slide-out {
+    to {
+        transform: translateY(-70px)
+    }
+}
