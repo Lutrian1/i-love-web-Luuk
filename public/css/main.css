@@ -181,7 +181,7 @@ nav{
 }
 
 /*----------------------------------- SUPPORTS QUERY: THIS DEFINES THE SITE SHAPE --------------------------------------*/
-/*
+
 @supports (clip-path: shape(from 0% 0%,hline to 93.74%,line to 100% 100%,line to 0% 89.01%,vline to 0%,close)){
     .top-box--1-for-ani{
         clip-path: shape(from 0% 0%,hline to 93.74%,line to 100% 100%,line to 0% 89.01%,vline to 0%,close);
@@ -215,5 +215,5 @@ nav{
         background: #a2d8f1;
     }
 }
-*/
+
 
