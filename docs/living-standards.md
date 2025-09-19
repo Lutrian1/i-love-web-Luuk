@@ -17,3 +17,7 @@ Deze demo laat zien hoe je met een (hypothetische) aangepaste functie het gedrag
 CODEPEN LINK 2 (Custom color scheme): https://codepen.io/Lutrian1/pen/JoGjZbr
 
 Deze demo laat zien hoe de @color-scheme regel en schemed-value() functie in de toekomst zouden kunnen werken. Let op: Deze code werkt nog nergens; het is een blik op de mogelijke toekomst van CSS.
+
+## Leer punten
+
+Momenteel is het alleen mogelijk om light en dark te gebruiken, maar niks anders. Met de bonvenstaande code zou het mogelijk kunnen zijn om meer dan alleen light dark te hebben. Deze code gebruikt nieuwere css zoals een if en return, waar Miriam Suzanne over praatte op CSS-Day, dit is een complexe functie en het beste is om [haar talk hier dan over te bekijken](https://conffab.com/presentation/is-sass-dead-yet-css-mixins-functions-c/).
