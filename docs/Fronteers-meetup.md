@@ -3,6 +3,7 @@
 ![fronteers](https://github.com/user-attachments/assets/088e4407-74a2-411d-bbb2-d75c3f9f7370)
 
 - Webstatus.dev
+- Ze zoeken nog sprekers
 - light dark css
 - :has(dailog[open]
 - scroll state stuck: top
@@ -12,5 +13,5 @@
 - Document.startviewtransition
 - Picture in picture API
 - Speculation rules
-- JadJoubran.io/slides
+- [JadJoubran.io/slides](https://jadjoubran.io/slides/frontend-festival-2025.pdf)
 - Allevia pollen passport 
